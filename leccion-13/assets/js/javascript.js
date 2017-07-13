@@ -27,7 +27,7 @@ function printHTML (html){
 var addFruta = document.getElementById('nuevacompra');
 addFruta.onclick = function() {
   var agregar = document.getElementById('fruit').value;
-  var product  = new master(fruta);
+  var product  = new master(agregar);
   frutas.push(product);
   printHTML(product.toHTML());
 };
